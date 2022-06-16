@@ -1,38 +1,101 @@
-.App {
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins-Regular";
+  color: #5a5a5a;
+  font-size: 16px;
+}
+a {
+  text-decoration: none;
+}
+h3 {
+  color: #0e47a2;
+  font-family: "Poppins-Medium";
+  line-height: 40px;
+}
+h4 {
+  color: #0e47a2;
+  font-family: "Poppins-Medium";
+  line-height: 35px;
+}
+h5 {
+  color: #0e47a2;
+  font-family: "Poppins-Medium";
+  font-size: 22px;
+}
+h6 {
+  color: #0e47a2;
+  font-family: "Poppins-Medium";
+}
+p {
+  font-family: "Poppins-Light";
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.textcenter {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.yellow-text {
+  color: #fecb00;
+}
+.gray-color {
+  color: #5a5a5a;
+}
+.opacity {
+  opacity: 0.6;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+hr {
+  background-color: #c2c2c2;
+  opacity: 0.25;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#main-nav {
+  background-color: #ffffff;
+  border-bottom: 1px #c2c2c2 solid;
 }
 
-.App-link {
-  color: #61dafb;
+#main-nav .navbar-dark .navbar-nav .nav-link {
+  color: #0e47a2;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#main-nav .signin {
+  background-color: #fecb00;
+  border-color: #fecb00;
+  color: #5a5a5a;
+  font-size: 14px;
+}
+
+#main-nav .signup {
+  background-color: #fff;
+  border-color: #fecb00;
+  color: #5a5a5a;
+  font-size: 14px;
+}
+
+#main-nav .navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+#main-nav .nav-item {
+  line-height: 35px;
+}
+#main-nav .navbar-dark .navbar-toggler-icon {
+  background-image: url(../public/img/toggler-icon.svg);
+}
+#main-nav .navbar-dark .nav-link:focus,
+#main-nav .navbar-dark .nav-link:hover {
+  color: #fecb00;
+}
+
+.fixed {
+  background-color: #263d7c;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  left: 0;
+  top: 0;
+  z-index: 25;
 }
